@@ -3,23 +3,29 @@
 </head>
 
 <body>
-  <h1>Welcome to Meteor!</h1>
-
-  {{> hello}}
-  {{> info}}
+  {{> paysafe}} {{> checkout}}
 </body>
-
-<template name="hello">
-  <button>Click Me</button>
-  <p>You've pressed the button {{counter}} times.</p>
+<template name="paysafe">
+  <script src="https://hosted.paysafe.com/checkout/v2/paysafe.checkout.min.js"></script>
 </template>
+<template name="checkout">
+  <h1>Checkout</h1>
+  <form class="checkout" method="post">
+    First Name<br />
+    <input type="text" name="fname" /><br />
+    Last Name<br />
+    <input type="text" name="lname" /><br />
+    Email<br />
+    <input type="text" name="email" /><br />
+    Street<br />
+    <input type="text" name="street" /><br />
+    City<br />
+    <input type="text" name="city" /><br />
+    Phone Number<br />
+    <input type="text" name="phnumber" /><br />
 
-<template name="info">
-  <h2>Learn Meteor!</h2>
-  <ul>
-    <li><a href="https://www.meteor.com/try" target="_blank">Do the Tutorial</a></li>
-    <li><a href="http://guide.meteor.com" target="_blank">Follow the Guide</a></li>
-    <li><a href="https://docs.meteor.com" target="_blank">Read the Docs</a></li>
-    <li><a href="https://forums.meteor.com" target="_blank">Discussions</a></li>
-  </ul>
+    <div class="button">
+      <input type="submit" class="button" value="checkout" />
+    </div>
+  </form>
 </template>
