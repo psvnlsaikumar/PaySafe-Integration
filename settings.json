@@ -1,10 +1,10 @@
 {
   "public": {
-    "stripe": {
-      "p_key": "pk_test_22r23a...fa3n"
+    "PaySafe": {
+      "p_key": ""
     }
   },
-  "stripe": {
-    "s_key": "sk_test_32uin...2nio"
+  "PaySafe": {
+    "s_key": ""
   }
 }
