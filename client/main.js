@@ -15,7 +15,6 @@ Template.checkout.events({
     let street = event.target.street.value;
     let city = event.target.city.value;
     let phnumber = event.target.phnumber.value;
-    console.log("hellooo + " + JSON.stringify(Meteor.settings));
-    checkout();
+    checkout(fname, lname, email, street, city, phnumber);
   },
 });
